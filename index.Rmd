@@ -11,10 +11,9 @@ For this project, we have thousands of audio files from students in Grades 2-4, 
 ### Training Materials
 Here you will find the materials for the two training sessions, where we teach you everything you need for this project. 
 
-* [The Prosody Rubric]()
-* The [slides and recordings]() from the training sessions
-* [Exemplar audio files]() so you can listen to readings that have been scored by or research team to calibrate your own ratings
-* Links to the [Prosody Certification]() assessments (you will need to score 80% or higher on two different sets of audio files which have previously been scored by the research team)
-
+* [The Prosody Rubric](https://jnese.github.io/CORE-II_trainingwebsite/prosody_rubric.html)
+* The [slides and recordings](https://jnese.github.io/CORE-II_trainingwebsite/training_materials.html) from the training sessions
+* [Exemplar audio files](https://jnese.github.io/CORE-II_trainingwebsite/exemplar_audiofiles.html) so you can listen to readings that have been scored by or research team to calibrate your own ratings
+* For assistance please email <jnese@uoregon.edu>
 
 
