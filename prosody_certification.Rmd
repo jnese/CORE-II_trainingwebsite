@@ -1,0 +1,16 @@
+---
+title: "Prosody Certification"
+---
+
+Please click on the link below to access the assessment. 
+
+| **Certification Assessment**                 |  
+| :------------------------------------------: | 
+|   [Certification Attempt #1]()               |
+|   [Certification Attempt #2]()               |
+|   [Certification Attempt #3]()               |
+|   [Certification Attempt #4]()               |
+|   [Certification Attempt #1]()               |
+
+
+For assistance please email <jnese@uoregon.edu>
