@@ -8,3 +8,5 @@ title: "Training Materials"
 | Training #1 | [Presentation #1 Materials](CORE_training_day1_FINAL.pdf) | [Training #1 (Day 2)](https://www.youtube.com/watch?v=Ey6hviOeOlI)  |
 | Training #2 | [Presentation #2 Materials]()           | [Training #2]()  |
 
+
+For assistance please email <jnese@uoregon.edu>

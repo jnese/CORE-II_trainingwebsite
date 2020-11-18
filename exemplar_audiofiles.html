@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -259,6 +262,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -266,6 +332,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -294,7 +370,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="prosody_certification.html">Prosody Certification</a>
+  <a href="help.html">Help!</a>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -310,51 +386,230 @@ $(document).ready(function () {
 </div>
 
 
-<div id="coming-soon" class="section level1">
-<h1>Coming Soon!</h1>
-<table>
-<thead>
-<tr class="header">
-<th align="center"><strong>Prosody Score 1</strong></th>
-<th align="center"><strong>Prosody Score 2</strong></th>
-<th align="center"><strong>Prosody Score 3</strong></th>
-<th align="center"><strong>Prosody Score 4</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="center">Sample 1</td>
-<td align="center">Sample 1</td>
-<td align="center">Sample 1</td>
-<td align="center">Sample 1</td>
-</tr>
-<tr class="even">
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr class="odd">
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr class="even">
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr class="odd">
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody>
-</table>
-<!-- <html> <audio controls>   <source src="audio.wav" type="audio/wav"> </audio></html> -->
+<div id="prosody-score-1" class="section level2">
+<h2>Prosody Score = 1</h2>
+<div id="sample-1" class="section level3">
+<h3>Sample 1</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score1-student_361_passage_222071_eddcdf9d81be5c11110ebcc9bb7a8c92f5ee09e3.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-2" class="section level3">
+<h3>Sample 2</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score1-student_703_passage_232045_e953208aba0a1cdca404e40b60b0984b25784e18.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-3" class="section level3">
+<h3>Sample 3</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score1-student_1003_passage_133024_fc6827520f5e5acae1ac396beb36e10c8bba7bc0.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-4" class="section level3">
+<h3>Sample 4</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score1-student_681_passage_222084_c1869457df76833b03bb92a38a9e2fc068f9d85a.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-5" class="section level3">
+<h3>Sample 5</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score1-student_780_passage_222071_2a15e882dbfd3986b45d5b0ae2affc5de05f7ada.wav" type="audio/wav">
+</audio>
+</html>
+</div>
+</div>
+<div id="prosody-score-2" class="section level2">
+<h2>Prosody Score = 2</h2>
+<div id="sample-1-1" class="section level3">
+<h3>Sample 1</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score2-student_1007_passage_133020_24ac162e68eb252c498d9ca829377444f2fd4087.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-2-1" class="section level3">
+<h3>Sample 2</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score2-student_537_passage_222071_f736b4a4fead11dc834dc193fa1aef711b387a08.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-3-1" class="section level3">
+<h3>Sample 3</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score2-student_572_passage_143001_33c723a0c08cd6a55beb035d0e502bca0c3f3411.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-4-1" class="section level3">
+<h3>Sample 4</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score2-student_67_passage_132035_24c5ebd788adc86d4641262922f7f8babf1dfd4f.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-5-1" class="section level3">
+<h3>Sample 5</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score2-student_69_passage_142050_5bd3a92122396ca1a3c29ad01099622c737740fc.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-6" class="section level3">
+<h3>Sample 6</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score2-student_921_passage_223043_842c0b98334b351e978f6e6ae3a2ca75acac6855.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-7" class="section level3">
+<h3>Sample 7</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score2-student_923_passage_223031_a1b01c1d5fa4eef6533512eefa85170e8c429621.wav" type="audio/wav">
+</audio>
+</html>
+</div>
+</div>
+<div id="prosody-score-3" class="section level2">
+<h2>Prosody Score = 3</h2>
+<div id="sample-1-2" class="section level3">
+<h3>Sample 1</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score3-student_158_passage_142055_02fbdfd792dc26fdc426818d1ab7b1bb39e16e40.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-2-2" class="section level3">
+<h3>Sample 2</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score3-student_284_passage_223041_2c8783990d38e79251309dae5443a3a7d200b324.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-3-2" class="section level3">
+<h3>Sample 3</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score3-student_289_passage_223043_4cb05db4c0e4779c5e7dfa349b3b984e916635f2.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-4-2" class="section level3">
+<h3>Sample 4</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score3-student_433_passage_143017_567c55f420667b51090bd0910e9088f1a1fe66c6.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-5-2" class="section level3">
+<h3>Sample 5</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score3-student_446_passage_242145_b182020ba9808fe97dcb7fd6694e0ee9f22bb79c.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-6-1" class="section level3">
+<h3>Sample 6</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score3-student_52_passage_232045_dc91be8c7a91809ea3c9dcba026fccdc7c6efc96.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-7-1" class="section level3">
+<h3>Sample 7</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score3-student_55_passage_132035_7f7c57d04a98ec723bdc5d28774ef77d8d442008.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-8" class="section level3">
+<h3>Sample 8</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score3-student_710_passage_233018_0ccbd299c89af677817cac1a4cce1a21b5698b3d.wav" type="audio/wav">
+</audio>
+</html>
+</div>
+</div>
+<div id="prosody-score-4" class="section level2">
+<h2>Prosody Score = 4</h2>
+<div id="sample-1-3" class="section level3">
+<h3>Sample 1</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score4-student_510_passage_142050_a35c91f3133489e9b1730573e4e83ac1f1f6d851.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-2-3" class="section level3">
+<h3>Sample 2</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score4-student_521_passage_242145_24ff2db1e3c300d77c01af17ad31236a26293dd2.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-3-3" class="section level3">
+<h3>Sample 3</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score4-student_883_passage_122040_c4bdf7df5efaafe51346562c42b50f4b35327fd6.wav" type="audio/wav">
+</audio>
+</html>
+<p><br></p>
+</div>
+<div id="sample-4-3" class="section level3">
+<h3>Sample 4</h3>
+<html>
+<audio controls>
+<source src="audiofiles/score4-student_949_passage_133020_8767d8e505ce17d042382191b9ceb6425c788918.wav" type="audio/wav">
+</audio>
+</html>
+<p>For assistance please email <a href="mailto:jnese@uoregon.edu" class="email">jnese@uoregon.edu</a></p>
+</div>
 </div>
 
 <p>
@@ -365,6 +620,8 @@ $(document).ready(function () {
 <script src="highlight-custom.js"></script>
 
 
+</div>
+</div>
 
 </div>
 
@@ -397,6 +654,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

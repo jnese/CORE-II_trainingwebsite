@@ -1,15 +1,148 @@
 ---
 title: "Exemplar Audio Files"
+output:
+  html_document: 
+    toc: true
+    toc_float: true
 ---
 
-# Coming Soon!
+```{r, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
 
-| **Prosody Score 1** |  **Prosody Score 2** |**Prosody Score 3** | **Prosody Score 4** |
-| :-----------------: | :------------------: | :----------------: | :-----------------: |
-|   Sample 1          |   Sample 1           |  Sample 1          |   Sample 1          |
-|                     |                      |                    |                     |
-|                     |                      |                    |                     |
-|                     |                      |                    |                     |
-|                     |                      |                    |                     |
+exemplars <- rio::import("W:/corestorage/prosody-study_phase1/audiofiles_extras/examplars/exemplar_directory.csv") %>% 
+  as_tibble() %>% 
+  filter(str_detect(sample_group, "_ex|train"))
 
-<!-- <html> <audio controls>   <source src="audio.wav" type="audio/wav"> </audio></html> -->
+exemp_training <- exemplars %>% 
+  mutate(path = paste0("W:/corestorage/prosody-study_phase1/audiofiles_extras/examplars/", file, ".wav"),
+         new_path = glue::glue("C:/Users/jnese/Desktop/BRT/GRANT-CORE_II/project/CORE-II_trainingwebsite/audiofiles/score{prosody_human}-{file}.wav")) 
+
+walk2(exemp_training$path, exemp_training$new_path,
+      ~fs::file_copy(.x, .y))
+
+```
+
+## Prosody Score = 1
+
+### Sample 1
+<html> <audio controls>   <source src="audiofiles/score1-student_361_passage_222071_eddcdf9d81be5c11110ebcc9bb7a8c92f5ee09e3.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 2
+<html> <audio controls>   <source src="audiofiles/score1-student_703_passage_232045_e953208aba0a1cdca404e40b60b0984b25784e18.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 3
+<html> <audio controls>   <source src="audiofiles/score1-student_1003_passage_133024_fc6827520f5e5acae1ac396beb36e10c8bba7bc0.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 4
+<html> <audio controls>   <source src="audiofiles/score1-student_681_passage_222084_c1869457df76833b03bb92a38a9e2fc068f9d85a.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 5
+<html> <audio controls>   <source src="audiofiles/score1-student_780_passage_222071_2a15e882dbfd3986b45d5b0ae2affc5de05f7ada.wav" type="audio/wav"> </audio></html>
+
+
+## Prosody Score = 2
+
+### Sample 1
+<html> <audio controls>   <source src="audiofiles/score2-student_1007_passage_133020_24ac162e68eb252c498d9ca829377444f2fd4087.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 2
+<html> <audio controls>   <source src="audiofiles/score2-student_537_passage_222071_f736b4a4fead11dc834dc193fa1aef711b387a08.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 3
+<html> <audio controls>   <source src="audiofiles/score2-student_572_passage_143001_33c723a0c08cd6a55beb035d0e502bca0c3f3411.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 4
+<html> <audio controls>   <source src="audiofiles/score2-student_67_passage_132035_24c5ebd788adc86d4641262922f7f8babf1dfd4f.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 5
+<html> <audio controls>   <source src="audiofiles/score2-student_69_passage_142050_5bd3a92122396ca1a3c29ad01099622c737740fc.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 6
+<html> <audio controls>   <source src="audiofiles/score2-student_921_passage_223043_842c0b98334b351e978f6e6ae3a2ca75acac6855.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 7
+<html> <audio controls>   <source src="audiofiles/score2-student_923_passage_223031_a1b01c1d5fa4eef6533512eefa85170e8c429621.wav" type="audio/wav"> </audio></html>
+
+## Prosody Score = 3
+
+### Sample 1
+<html> <audio controls>   <source src="audiofiles/score3-student_158_passage_142055_02fbdfd792dc26fdc426818d1ab7b1bb39e16e40.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 2
+<html> <audio controls>   <source src="audiofiles/score3-student_284_passage_223041_2c8783990d38e79251309dae5443a3a7d200b324.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 3
+<html> <audio controls>   <source src="audiofiles/score3-student_289_passage_223043_4cb05db4c0e4779c5e7dfa349b3b984e916635f2.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 4
+<html> <audio controls>   <source src="audiofiles/score3-student_433_passage_143017_567c55f420667b51090bd0910e9088f1a1fe66c6.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 5
+<html> <audio controls>   <source src="audiofiles/score3-student_446_passage_242145_b182020ba9808fe97dcb7fd6694e0ee9f22bb79c.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 6
+<html> <audio controls>   <source src="audiofiles/score3-student_52_passage_232045_dc91be8c7a91809ea3c9dcba026fccdc7c6efc96.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 7
+<html> <audio controls>   <source src="audiofiles/score3-student_55_passage_132035_7f7c57d04a98ec723bdc5d28774ef77d8d442008.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 8
+<html> <audio controls>   <source src="audiofiles/score3-student_710_passage_233018_0ccbd299c89af677817cac1a4cce1a21b5698b3d.wav" type="audio/wav"> </audio></html>
+
+
+## Prosody Score = 4
+
+### Sample 1
+<html> <audio controls>   <source src="audiofiles/score4-student_510_passage_142050_a35c91f3133489e9b1730573e4e83ac1f1f6d851.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 2
+<html> <audio controls>   <source src="audiofiles/score4-student_521_passage_242145_24ff2db1e3c300d77c01af17ad31236a26293dd2.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 3
+<html> <audio controls>   <source src="audiofiles/score4-student_883_passage_122040_c4bdf7df5efaafe51346562c42b50f4b35327fd6.wav" type="audio/wav"> </audio></html>
+
+<br>
+
+### Sample 4
+<html> <audio controls>   <source src="audiofiles/score4-student_949_passage_133020_8767d8e505ce17d042382191b9ceb6425c788918.wav" type="audio/wav"> </audio></html>
+
+
+For assistance please email <jnese@uoregon.edu>
