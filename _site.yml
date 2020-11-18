@@ -1,0 +1,28 @@
+name: CORE II Prosody Training
+output_dir: '.'
+navbar:
+  title: CORE II Prosody Training
+  left:
+  - text: Prosody Rubric
+    href: prosody_rubric.html
+  - text: Training Materials
+    href: training_materials.html
+  - text: Exemplar Audio Files
+    href: exemplar_audiofiles.html    
+  right:
+  - text: Prosody Certification 
+    href: prosody_certification.html
+  # - text: Kaggle
+  #   href: https://www.kaggle.com/c/edld-654-fall-2020/overview
+  # - icon: fa-server
+  #   href: talapas-pkg-install.html
+  # - icon: fa-github
+  #   href: https://github.com/uo-datasci-specialization/c4-ml-fall-2020
+output:
+  html_document:
+    theme: journal
+    includes:
+#      in_header: header.html
+      after_body: footer.html
+#    lib_dir: site_libs
+#    self_contained: no
