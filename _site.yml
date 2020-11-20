@@ -10,6 +10,8 @@ navbar:
   - text: Exemplar Audio Files
     href: exemplar_audiofiles.html    
   right:
+  - text: Scoring Site 
+    href: scoring_site.html
   - text: Help! 
     href: help.html
   # - text: Prosody Certification 
