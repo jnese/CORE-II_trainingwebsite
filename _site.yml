@@ -12,6 +12,8 @@ navbar:
   right:
   - text: Scoring Site 
     href: scoring_site.html
+  - text: About 
+    href: https://ies.ed.gov/funding/grantsearch/details.asp?ID=3427
   - text: Help! 
     href: help.html
   # - text: Prosody Certification 
