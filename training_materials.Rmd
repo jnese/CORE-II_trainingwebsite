@@ -5,8 +5,8 @@ title: "Training Materials"
 
 | **Session** |  **Slides**                                           | **Recording**                                                       |
 | :---------: | :---------------------------------------------------: | :-----------------------------------------------------------------: |
-| Training #1 | [Presentation #1 Slides](CORE_training_session1day2_FINAL.pdf) | [Training #1 (Day 2)](https://www.youtube.com/watch?v=Ey6hviOeOlI)  |
-| Training #2 | [Presentation #2 Slides](CORE_training_session2day2_FINAL.pdf)           | [Training #2]()  |
+| Training #1 | [Presentation #1 Slides](CORE_training_session1day2_FINAL.pdf) | [Training Session #1 (Day 2)](https://www.youtube.com/watch?v=Ey6hviOeOlI)  |
+| Training #2 | [Presentation #2 Slides](CORE_training_session2day2_FINAL.pdf)           | [Training Session #2 (Day 2)](https://youtu.be/gn4n0LP76zM)  |
 
 
 For assistance please email <jnese@uoregon.edu>
